@@ -1,0 +1,28 @@
+{
+  "name": "f1drivers",
+  "version": "1.0.0",
+  "description": "Connect user to Google Sheets data via API, and allow response and populate the Google Sheet",
+  "main": "f1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WanderlustKing11/google-sheets.git"
+  },
+  "keywords": [
+    "Google-Sheets",
+    "API",
+    "JavaScript"
+  ],
+  "author": "Wande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WanderlustKing11/google-sheets/issues"
+  },
+  "homepage": "https://github.com/WanderlustKing11/google-sheets#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "googleapis": "^118.0.0"
+  }
+}
