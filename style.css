@@ -1,0 +1,16 @@
+body {
+  background-color: hsl(0, 0%, 22%);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+.title h1 {
+  display: flex;
+  color: #fff;
+  font-size: 3rem;
+}
