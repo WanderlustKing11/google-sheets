@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Wankers</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+
+  <main class='drivers-wrapper'>
+    <form id='drivers' action='/' method='POST'>
+      <label for=drivers>Driver:</label>
+      <select name=drivers id=drivers-lname>
+        <% drivers.forEach((driver) => { %>
+          <option><%= driver %></option>
+        <% }); %>
+      </select>
+      <label for='drivers'>Is he a wanker?</label>
+      <input type='text' name='drivers' class='drivers-input'>
+      <button class='drivers-btn' type='submit'>Submit</button>
+    </form>
+  </main>
+
+</body>
+</html>

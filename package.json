@@ -2,7 +2,7 @@
   "name": "f1drivers",
   "version": "1.0.0",
   "description": "Connect user to Google Sheets data via API, and allow response and populate the Google Sheet",
-  "main": "f1.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/WanderlustKing11/google-sheets#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "googleapis": "^118.0.0"
   }
