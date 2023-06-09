@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F1 Wankers</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <main class="drivers-wrapper">
+        <form id="drivers" action="/" method="POST">
+          <label for="drivers">Driver's last name:</label>
+          <input type="text" name="drivers" class="drivers-lName" placeholder='Verstappen'/>
+          <button class='drivers-btn' name='nameCheck' type='submit'>Check Name</button>
+        </form>
 
-  <main class='drivers-wrapper'>
-    <form id='drivers' action='/' method='POST'>
-      <label for=drivers>Driver:</label>
-      <select name=drivers id=drivers-lname>
-        <% drivers.forEach((driver) => { %>
-          <option><%= driver %></option>
-        <% }); %>
-      </select>
-      <label for='drivers'>Is he a wanker?</label>
-      <input type='text' name='drivers' class='drivers-input'>
-      <button class='drivers-btn' type='submit'>Submit</button>
-    </form>
-  </main>
-
-</body>
+    <% if (message) { %>
+      <h3><%= message %></h3>
+    <% } %>
+      
+    </main>
+  </body>
 </html>

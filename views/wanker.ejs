@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Wankers</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <main class="drivers-wrapper">
+        <form id="wankerForm" action="/submit" method="POST">
+          <input type='hidden' name='driver' value='<%= driver %>'>
+          <label for='wanker'>Is <%= driver %> a wanker?</label>
+          <select name='wankerStatus' id='wankerStatus'>
+            <option value='choose' selected disabled>Choose</option>
+            <option value='yes'>He's a total wanker</option>
+            <option value='no'>Nah, he's the GOAT</option>
+          </select>
+          <button class='drivers-btn' name='submit' type='submit'>Submit</button>
+        </form>
+    </main>
+  </body>
+</html>
