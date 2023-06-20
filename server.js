@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
 
     // Instance of Google Sheets API
     const googleSheets = google.sheets({ version: 'v4', auth: client });
-    // const spreadsheetId = '... spreadsheetId';
+    // const spreadsheetId = '... { Enter your spreadsheetId here }';
 
     // Read row(s) from spreadsheet
     const getRows = await googleSheets.spreadsheets.values.get({
@@ -90,7 +90,7 @@ app.post('/submit', async (req, res) => {
 
     // Instance of Google Sheets API
     const googleSheets = google.sheets({ version: 'v4', auth: client });
-    // const spreadsheetId = '... spreadsheetId';
+    // const spreadsheetId = '... { Enter your spreadsheetId here }';
 
     // Read row(s) from spreadsheet
     const getRows = await googleSheets.spreadsheets.values.get({
